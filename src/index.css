@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Space Mono', monospace;
+  --font-mono: 'Space Mono', monospace;
+
+  --color-rich-black: #050505;
+  --color-turquoise: #32ffb6;
+  --color-gold: #d4af37;
+}
+
+@layer components {
+  .nav-ticket {
+    position: relative;
+  }
+  .nav-ticket::before,
+  .nav-ticket::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-color: #32ffb6;
+    border-style: solid;
+    transition: all 0.3s;
+  }
+  .nav-ticket::before {
+    top: 0; left: 0;
+    border-width: 1px 0 0 1px;
+  }
+  .nav-ticket::after {
+    bottom: 0; right: 0;
+    border-width: 0 1px 1px 0;
+  }
+  .nav-ticket:hover::before,
+  .nav-ticket:hover::after {
+    width: 100%;
+    height: 100%;
+    border-color: #32ffb6;
+  }
+  .nav-ticket:hover {
+    background: #32ffb6;
+    box-shadow: 0 0 16px rgba(50, 255, 182, 0.4);
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  section[id] {
+    scroll-margin-top: 6rem;
+  }
+
+  body {
+    @apply bg-rich-black text-white antialiased;
+    font-family: 'Space Mono', monospace;
+    @apply selection:bg-turquoise selection:text-rich-black;
+  }
+}
