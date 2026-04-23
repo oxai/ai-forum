@@ -37,6 +37,7 @@ export interface Sponsor {
   name: string;
   image: string;
   alt: string;
+  href?: string;
 }
 
 export interface SupportedLogo {
