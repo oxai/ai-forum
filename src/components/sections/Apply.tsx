@@ -12,7 +12,7 @@ export function Apply() {
             Get Your Ticket
           </h2>
           <p className="text-white/70 text-xl font-light">
-            Limited to {EVENT.maxAttendees} attendees. Secure your place among researchers, builders, and institutional leaders shaping the future of AI.
+            Secure your place among researchers, builders, and institutional leaders shaping the future of AI.
           </p>
           <div className="mt-8 border border-turquoise/30 px-8 py-6 flex flex-col items-center gap-4 relative">
             <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-rich-black px-4 font-mono text-xs tracking-widest text-turquoise whitespace-nowrap">

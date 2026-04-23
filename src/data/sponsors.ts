@@ -1,11 +1,5 @@
 import type { Sponsor, SupportedLogo } from '@/types';
 
-export const GOLD_SPONSOR: Sponsor = {
-  name: 'Scale',
-  image: '/sponsors/scale-logo.png',
-  alt: 'Scale Logo',
-};
-
 export const REGULAR_SPONSORS: Sponsor[] = [
   { name: 'Sa\u00efd Business School', image: '/sponsors/said-business-school.png', alt: 'Sa\u00efd Business School' },
 ];

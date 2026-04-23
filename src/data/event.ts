@@ -15,7 +15,7 @@ export const EVENT = {
 } as const;
 
 export const INTRO_PARAGRAPH =
-  'Oxford AI Society is the biggest AI student society in Europe, focused on making AI beneficial and accessible. On 30 May 2026, 400 students, researchers, builders, and institutional leaders will gather at Oxford\u2019s Mathematical Institute for a full-day forum on the future of AI. The event is designed for serious discussion and meaningful exchange, bringing together people exploring how AI is shaping knowledge, institutions, and society. It covers the full range of frontier technology, including AI systems, robotics, quantum computing, and real-world applications, with attention to both current capabilities and future impact.';
+  'Oxford AI Society is the biggest AI student society in Europe, focused on making AI beneficial and accessible. On 30 May 2026, students, researchers, builders, and institutional leaders will gather at Oxford\u2019s Mathematical Institute for a full-day forum on the future of AI. The event is designed for serious discussion and meaningful exchange, bringing together people exploring how AI is shaping knowledge, institutions, and society. It covers the full range of frontier technology, including AI systems, robotics, quantum computing, and real-world applications, with attention to both current capabilities and future impact.';
 
 export function isIntroWordHighlighted(word: string, index: number): boolean {
   return (
