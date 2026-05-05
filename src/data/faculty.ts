@@ -32,11 +32,11 @@ export const FACULTY: FacultyMember[] = [
     ],
   },
   {
-    name: 'Scott Hale',
+    name: 'Dr Scott Hale',
     role: 'Director, Oxford Internet Institute',
     image: '/faculty/scott-hale.jpg',
     bio: [
-      'An Associate Professor and Director of the Oxford Internet Institute, Scott Hale\u2019s research focuses on ',
+      'An Associate Professor and Director of the Oxford Internet Institute, Dr Scott Hale\u2019s research focuses on ',
       { highlight: 'computational social science' },
       ' and the intersection of technology and society. His pioneering work in understanding digital platforms and human behaviour. As a leading voice in the field, his insights are crucial for ',
       { highlight: 'shaping the future of internet governance' },
