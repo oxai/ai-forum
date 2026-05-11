@@ -9,7 +9,7 @@ export const ITINERARY: ItineraryItem[] = [
   { time: '12:00', title: 'On-site Lunch', description: '' },
   { time: '13:00', title: 'Focus Groups: Session 2', description: 'Delegates select between Focus Group 3 (Gemini — Future of Work) or Focus Group 4 (Safety/Security), running simultaneously.' },
   { time: '14:00', title: 'Networking Coffee', description: '' },
-  { time: '14:30', title: 'Debate — Geopolitics', description: 'This house believes the United States of America lost the war for AI.' },
+  { time: '14:30', title: 'Debate', description: 'Navigating the Geopolitics of AI' },
   { time: '15:45', title: 'Coffee and Debate Vote', description: '' },
   { time: '16:00', title: 'Frontier Startups Pitch', description: '' },
   { time: '17:00', title: 'Keynote Speech', description: '' },
