@@ -158,10 +158,10 @@ function FacultyCard({ member, onOpen }: { member: FacultyMember; onOpen: () => 
         />
       </button>
       <div>
-        <h3 className="font-sans text-2xl font-normal mb-1">
+        <h3 className="font-sans text-xl font-normal mb-1 lg:text-lg">
           {member.name}
         </h3>
-        <div className="font-mono text-xs tracking-widest text-turquoise uppercase">
+        <div className="font-mono text-[0.65rem] tracking-widest text-turquoise uppercase">
           {renderRole(member.role)}
         </div>
       </div>
@@ -173,14 +173,14 @@ export function Faculty() {
   const [activeMember, setActiveMember] = useState<FacultyMember | null>(null);
 
   return (
-    <section id="faculty" className="py-16 md:py-24 px-6 max-w-7xl mx-auto">
+    <section id="faculty" className="py-16 md:py-24 px-6 max-w-[90rem] mx-auto">
       <FadeIn>
         <h2 className="font-sans text-4xl md:text-6xl font-normal tracking-tighter mb-16 text-center text-turquoise">
           Featured Senior Participants
         </h2>
       </FadeIn>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8">
         {FACULTY.map((member, index) => (
           <FadeIn key={member.name} delay={index * 0.1}>
             <FacultyCard member={member} onOpen={() => setActiveMember(member)} />
