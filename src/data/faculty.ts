@@ -1,3 +1,4 @@
+// Content — all rights reserved, see NOTICE.md
 import type { FacultyMember } from '@/types';
 
 export const FACULTY: FacultyMember[] = [

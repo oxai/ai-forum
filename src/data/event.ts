@@ -1,3 +1,4 @@
+// Content — all rights reserved, see NOTICE.md
 export const EVENT = {
   name: 'Oxford Frontier AI Forum 2026',
   shortName: 'Oxford Frontier AI Forum',

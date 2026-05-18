@@ -1,3 +1,4 @@
+// Content — all rights reserved, see NOTICE.md
 export const CREDITS = {
   copyright: 'THE OXFORD FRONTIER AI FORUM',
   websiteDevelopers: [

@@ -1,3 +1,4 @@
+// Content — all rights reserved, see NOTICE.md
 import type { Pillar, ProgramItem } from '@/types';
 
 export const PILLARS: Pillar[] = [

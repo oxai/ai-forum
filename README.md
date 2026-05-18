@@ -51,3 +51,9 @@ All site copy — navigation links, pillars, program items, itinerary, faculty a
 ## Styling
 
 The brand palette and fonts are declared as Tailwind v4 theme tokens in `src/index.css` using the `@theme` directive. The accent color (`--color-turquoise: #32FFB6`) is available throughout as `text-turquoise`, `bg-turquoise`, `border-turquoise`, etc.
+
+## Licensing
+
+Source code is licensed under GPL-3.0 (see `LICENSE.txt`).
+
+Site content — photographs, faculty biographies, and all text and media in `public/` and `src/data/` — is © its respective owners and all rights reserved unless otherwise noted. See `NOTICE.md`.

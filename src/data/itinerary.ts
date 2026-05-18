@@ -1,3 +1,4 @@
+// Content — all rights reserved, see NOTICE.md
 import type { ItineraryItem } from '@/types';
 
 export const ITINERARY: ItineraryItem[] = [

@@ -1,3 +1,4 @@
+// Content — all rights reserved, see NOTICE.md
 import type { RegistryCategory } from '@/types';
 
 export const REGISTRY_INTRO =

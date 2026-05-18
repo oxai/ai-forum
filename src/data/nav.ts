@@ -1,3 +1,4 @@
+// Content — all rights reserved, see NOTICE.md
 import type { NavLink } from '@/types';
 import { EVENT } from './event';
 import { CREDITS } from './credits';
