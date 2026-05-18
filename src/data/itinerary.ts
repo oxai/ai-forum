@@ -3,7 +3,7 @@ import type { ItineraryItem } from '@/types';
 
 export const ITINERARY: ItineraryItem[] = [
   { time: '09:30', title: 'Inauguration Speech', description: '' },
-  { time: '09:40', title: 'Scott Hale (OII)', description: 'Alignment and disinformation.' },
+  { time: '09:45', title: 'Scott Hale (OII)', description: 'Alignment and disinformation.' },
   { time: '10:00', title: 'Seminar 1 — James Dancer', description: 'An exploration of UK Sovereign AI and institutional leadership featuring the Chair of Oxford Alumni.' },
   { time: '10:45', title: 'Coffee Break', description: '' },
   { time: '11:00', title: 'Focus Groups: Session 1', description: 'Delegates select between Focus Group 1 (Quantum) or Focus Group 2 (Physical AI), running simultaneously.' },
