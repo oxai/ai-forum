@@ -6,7 +6,6 @@ export const EVENT = {
   dateLabel: 'Saturday 30 May 2026 · Mathematical Institute, Oxford',
   /** Used by the countdown timer. */
   startIso: '2026-05-30T09:00:00Z',
-  earlyBirdDeadlineIso: '2026-04-24T23:59:59Z',
   venueUrl: 'https://maps.google.com/?q=Mathematical+Institute+University+of+Oxford',
   applyFormUrl: 'https://luma.com/aiforum',
   aboutUrl: 'https://www.oxai.org/about-us',
