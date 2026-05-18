@@ -42,11 +42,34 @@
     background: #32ffb6;
     box-shadow: 0 0 16px rgba(50, 255, 182, 0.4);
   }
+
+  .scrollbar-turquoise {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+  }
+  .scrollbar-turquoise::-webkit-scrollbar {
+    width: 8px;
+  }
+  .scrollbar-turquoise::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-turquoise::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 9999px;
+  }
+  .scrollbar-turquoise::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
   }
 
   section[id] {
