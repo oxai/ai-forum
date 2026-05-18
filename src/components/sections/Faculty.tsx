@@ -87,8 +87,8 @@ function FacultyModal({ member, onClose }: { member: FacultyMember; onClose: () 
         exit={{ opacity: 0, scale: 0.95, y: 16 }}
         transition={{ duration: 0.35, ease: EASE_OUT }}
       >
-        <div className="flex items-start gap-6 p-6 sm:gap-8 sm:p-10 sm:pb-6">
-          <div className="h-32 w-32 shrink-0 overflow-hidden rounded-sm bg-white/5 sm:h-44 sm:w-44">
+        <div className="flex flex-col items-center gap-4 p-6 pt-12 text-center sm:flex-row sm:items-start sm:gap-8 sm:p-10 sm:pb-6 sm:pt-10 sm:text-left">
+          <div className="h-28 w-28 shrink-0 overflow-hidden rounded-sm bg-white/5 sm:h-44 sm:w-44">
             <motion.img
               src={member.image}
               alt={member.name}
@@ -111,7 +111,7 @@ function FacultyModal({ member, onClose }: { member: FacultyMember; onClose: () 
             type="button"
             onClick={onClose}
             aria-label="Close"
-            className="group/close shrink-0 flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/60 transition-colors duration-200 hover:border-turquoise hover:text-turquoise focus-visible:border-turquoise focus-visible:text-turquoise focus-visible:outline-none"
+            className="group/close absolute right-4 top-4 z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 bg-rich-black text-white/60 transition-colors duration-200 hover:border-turquoise hover:text-turquoise focus-visible:border-turquoise focus-visible:text-turquoise focus-visible:outline-none sm:static"
           >
             <svg
               viewBox="0 0 24 24"
