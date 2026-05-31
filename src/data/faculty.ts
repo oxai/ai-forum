@@ -33,22 +33,7 @@ export const FACULTY: FacultyMember[] = [
       ' looking to navigate the University\u2019s legacy and future.',
     ],
   },
-  {
-    name: 'Professor Philip Torr',
-    role: 'World Renowned AI Scientist',
-    image: '/faculty/philip-torr.jpg',
-    bio: [
-      'A leading researcher in computer vision and deep learning at the University of Oxford, Professor Torr is a ',
-      { highlight: 'Fellow of the Royal Academy of Engineering' },
-      ' and leader of the Torr Vision Group. His work focuses on ',
-      { highlight: 'robust AI systems and their real-world applications' },
-      ', resulting in a research impact of over ',
-      { highlight: '129,000 citations' },
-      ' and an ',
-      { highlight: 'h-index of 152' },
-      '. As a globally recognized authority, his contributions define the frontiers of intelligent infrastructure.',
-    ],
-  },
+ 
   {
     name: 'Dr Scott Hale',
     role: 'Director, Oxford Internet Institute',
