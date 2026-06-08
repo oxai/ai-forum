@@ -27,52 +27,64 @@ export function Footer() {
           </a>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-12 md:gap-20">
-          <div className="flex flex-col gap-2">
-            <span className="font-mono text-white/30 text-xs tracking-widest mb-1">ENQUIRIES</span>
-            <a
-              href={`mailto:${CREDITS.contactEmail}`}
-              className="font-mono text-sm tracking-widest text-white/70 hover:text-turquoise transition-colors"
-            >
-              {CREDITS.contactEmail}
-            </a>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <span className="font-mono text-white/30 text-xs tracking-widest mb-1">WEBSITE DEVELOPED AND MAINTAINED BY</span>
-            {CREDITS.websiteDevelopers.map((dev) =>
-              dev.url ? (
-                <a
-                  key={dev.name}
-                  href={dev.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-mono text-sm tracking-widest text-white/70 hover:text-turquoise transition-colors"
-                >
-                  {dev.name}
-                </a>
-              ) : (
-                <span key={dev.name} className="font-mono text-sm tracking-widest text-white/70">{dev.name}</span>
-              )
-            )}
-          </div>
+        <div className="flex flex-col gap-2">
+          <span className="font-mono text-white/30 text-xs tracking-widest mb-1">ENQUIRIES</span>
+          <a
+            href={`mailto:${CREDITS.contactEmail}`}
+            className="font-mono text-sm tracking-widest text-white/70 hover:text-turquoise transition-colors"
+          >
+            {CREDITS.contactEmail}
+          </a>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto border-t border-white/10 py-8 flex flex-col items-center gap-3 text-center">
-        <p className="font-mono text-xs tracking-widest text-white/30 max-w-2xl leading-relaxed">
+      <div className="max-w-7xl mx-auto border-t border-white/10 py-8 flex flex-col md:flex-row md:items-center gap-6 md:gap-8">
+        <div className="md:flex-1 text-center md:text-left">
+          <span className="block font-mono text-white/30 text-[0.65rem] tracking-widest mb-1">{CREDITS.website.initialDesign.role}</span>
+          {CREDITS.website.initialDesign.url ? (
+            <a
+              href={CREDITS.website.initialDesign.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-xs tracking-widest text-white/50 hover:text-turquoise transition-colors"
+            >
+              {CREDITS.website.initialDesign.name}
+            </a>
+          ) : (
+            <span className="font-mono text-xs tracking-widest text-white/50">{CREDITS.website.initialDesign.name}</span>
+          )}
+        </div>
+
+        <p className="md:flex-[2] font-mono text-xs tracking-widest text-white/30 max-w-2xl mx-auto leading-relaxed text-center">
           {CREDITS.acknowledgement.message}
         </p>
-        {CREDITS.contributors.length > 0 && (
-          <div className="flex flex-wrap justify-center gap-4 mt-2">
-            {CREDITS.contributors.map((c) => (
-              <span key={c.name} className="font-mono text-xs text-white/20 tracking-widest">
-                {c.name}{c.role ? ` — ${c.role}` : ''}
-              </span>
-            ))}
-          </div>
-        )}
+
+        <div className="md:flex-1 text-center md:text-right">
+          <span className="block font-mono text-white/30 text-[0.65rem] tracking-widest mb-1">{CREDITS.website.development.role}</span>
+          {CREDITS.website.development.url ? (
+            <a
+              href={CREDITS.website.development.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-xs tracking-widest text-white/50 hover:text-turquoise transition-colors"
+            >
+              {CREDITS.website.development.name}
+            </a>
+          ) : (
+            <span className="font-mono text-xs tracking-widest text-white/50">{CREDITS.website.development.name}</span>
+          )}
+        </div>
       </div>
+
+      {CREDITS.contributors.length > 0 && (
+        <div className="max-w-7xl mx-auto pb-8 flex flex-wrap justify-center gap-4">
+          {CREDITS.contributors.map((c) => (
+            <span key={c.name} className="font-mono text-xs text-white/20 tracking-widest">
+              {c.name}{c.role ? ` — ${c.role}` : ''}
+            </span>
+          ))}
+        </div>
+      )}
 
     </footer>
   );

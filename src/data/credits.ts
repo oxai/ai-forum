@@ -1,11 +1,10 @@
 // Content — all rights reserved, see NOTICE.md
 export const CREDITS = {
   copyright: 'THE OXFORD FRONTIER AI FORUM',
-  websiteDevelopers: [
-    { name: 'WIKTOR BOGUSIEWICZ', url: 'https://shorturl.at/yJT4c' },
-    { name: 'PUYU WANG', url: '' },
-   
-  ],
+  website: {
+    development: { role: 'DEVELOPMENT & MAINTENANCE', name: 'PUYU WANG', url: '' },
+    initialDesign: { role: 'INITIAL DESIGN', name: 'WIKTOR BOGUSIEWICZ', url: 'https://shorturl.at/yJT4c' },
+  },
   acknowledgement: {
     presentedBy: 'THE OXFORD AI SOCIETY',
     message:
